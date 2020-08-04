@@ -193,7 +193,7 @@ async def on_message_edit(before, after):
             if len(EDITED_MESSAGES) > 5:
                 del EDITED_MESSAGES[0]
 
-@client.command(aliases=['insult ','insult me','Insult'])     #a fun evil insult command 
+@client.command(aliases=['insult ','insult me','Insult'])    #a fun evil insult command 
 async def insult(ctx):
       import time
       res=requests.get(url='https://evilinsult.com/generate_insult.php?lang=en&type=json')
